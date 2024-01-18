@@ -1,0 +1,13 @@
+<h1>LOGIN</h1>
+<h3>Will only work with 'user' and 'password'</h3>
+<div data-controller="users">
+  User: <input data-users-target="user"/>
+  <br/>
+  Password: <input data-users-target="password" type="password"/>
+  <br/>
+  <button data-action="click->users#login">login</button>
+
+  <br/><br/>
+
+  <span data-users-target="output"></span>
+</div>
