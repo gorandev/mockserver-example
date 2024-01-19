@@ -1,6 +1,6 @@
 FROM ruby:3.3-alpine
 
-RUN apk update && apk upgrade && apk add --update bash build-base libxml2-dev libxslt-dev npm yarn tzdata shared-mime-info git
+RUN apk update && apk upgrade && apk add --update bash build-base libxml2-dev libxslt-dev npm yarn tzdata shared-mime-info git gcompat
 WORKDIR /app
 COPY hellorails/* .
 
